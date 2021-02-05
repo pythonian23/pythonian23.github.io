@@ -1,0 +1,53 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  font-size: 0;
+
+  background-color: var(--tertiary-bg);
+}
+
+header div {
+  display: inline-block;
+
+  width: 20vw;
+  height: 40px;
+
+  text-align: center;
+
+  border-left: solid 1px var(--primary);
+}
+
+header div:first-child {
+  border-left: none;
+}
+
+header div:last-child {
+  width: 19vw;
+}
+
+header div a {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  font-size: 32px;
+  padding: 0;
+}
+
+header div a:visited {
+  color: var(--primary);
+}
+
+header div a:hover {
+  text-shadow: 0 0 3px #0f0;
+}

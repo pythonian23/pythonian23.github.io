@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+:root {
+  --primary-bg: #131315;
+  --secondary-bg: #232926;
+  --tertiary-bg: #434343;
+
+  --primary: #fff;
+  --secondary: #ccc;
+  --tertiary: #aaa;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin-top: 48px;
+
+  font-family: "Inconsolata";
+
+  background: radial-gradient(var(--secondary-bg), var(--primary-bg));
+  background-size: cover;
+
+  color: var(--secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}

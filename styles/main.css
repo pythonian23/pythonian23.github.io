@@ -6,8 +6,10 @@
   --tertiary-bg: #434343;
 
   --primary: #fff;
-  --secondary: #ccc;
-  --tertiary: #aaa;
+  --secondary: #eee;
+  --tertiary: #ccc;
+
+  --primary-highlight: #0f0;
 }
 
 html {
@@ -15,7 +17,7 @@ html {
 }
 
 body {
-  margin-top: 48px;
+  margin-top: 128px;
 
   font-family: "Inconsolata";
 

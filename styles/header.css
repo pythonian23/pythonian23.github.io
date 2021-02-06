@@ -5,15 +5,29 @@ header {
   width: 100vw;
   height: auto;
 
+  background-color: var(--secondary);
+
+  box-shadow: 0 0 5px #0f0;
+
+  border-radius: 0 0 5px 5px;
+}
+
+#titlebar {
+  width: 100vw;
+  height: 48px;
+}
+
+#topbar {
+  width: 100vw;
+  height: auto;
+
   padding-top: 4px;
   padding-bottom: 4px;
 
   font-size: 0;
-
-  background-color: var(--tertiary-bg);
 }
 
-header div {
+#topbar div {
   display: inline-block;
 
   width: 20vw;
@@ -21,18 +35,18 @@ header div {
 
   text-align: center;
 
-  border-left: solid 1px var(--primary);
+  border-left: solid 2px #000;
 }
 
-header div:first-child {
+#topbar div:first-child {
   border-left: none;
 }
 
-header div:last-child {
+#topbar div:last-child {
   width: 19vw;
 }
 
-header div a {
+#topbar div a {
   display: inline-block;
   color: var(--primary);
   text-decoration: none;
@@ -42,12 +56,14 @@ header div a {
   margin-top: 4px;
   font-size: 32px;
   padding: 0;
+
+  color: #000;
 }
 
-header div a:visited {
-  color: var(--primary);
+#topbar div a:visited {
+  color: #000;
 }
 
-header div a:hover {
-  text-shadow: 0 0 3px #0f0;
+#topbar div a:hover {
+  text-shadow: 0 0 3px var(--primary-highlight);
 }

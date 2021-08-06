@@ -1,0 +1,44 @@
+/*Color Pallete*/
+:root {
+    --black: #000000ff;
+    --charcoal: #353d45ff;
+    --red-salsa: #fb3640ff;
+    --medium-blue: #0000ccff;
+    --sunglow: #ffcc00ff;
+    --electric-green: #00ff00ff;
+}
+
+/*Set colors*/
+[color=black] {color: var(--black)}
+[color=charcoal] {color: var(--charcoal)}
+[color=red-salsa] {color: var(--red-salsa)}
+[color=medium-blue] {color: var(--medium-blue)}
+[color=sunglow] {color: var(--sunglow)}
+[color=electric-green] {color: var(--electric-green)}
+
+* {
+    font-family: 'InconsolataRegular';
+    font-weight: normal;
+    font-style: normal; 
+}
+
+body {
+    background-color: var(--black);
+}
+
+h1 {
+    color: var(--electric-green);
+    font-weight: bolder;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+p {
+    text-indent: 50px;
+}
+
+div.division-container {
+    display: flex;
+}

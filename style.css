@@ -22,7 +22,10 @@
     font-style: normal; 
 }
 
-body {
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
     background-color: var(--black);
 }
 
@@ -36,9 +39,47 @@ h2, h3, h4, h5, h6 {
 }
 
 p {
-    text-indent: 50px;
+    display: inline;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-indent: 64px;
 }
 
-div.division-container {
+div.top-bar {
     display: flex;
+    background-color: var(--charcoal);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+div.top-bar div {
+    display: inline-block;
+    margin: 12px;
+
+    align-items: center;
+}
+
+div.top-bar div a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+
+    color: inherit;
+}
+
+div.top-bar div a:visited {
+    color: inherit;
+}
+
+div.top-bar + div {
+    padding-top: 64px;
 }

@@ -45,7 +45,7 @@ p {
     text-indent: 64px;
 }
 
-div.top-bar {
+div#top-bar {
     display: flex;
     background-color: var(--charcoal);
     border-bottom-left-radius: 16px;
@@ -61,14 +61,14 @@ div.top-bar {
     top: 0;
 }
 
-div.top-bar div {
+div#top-bar div {
     display: inline-block;
     margin: 12px;
 
     align-items: center;
 }
 
-div.top-bar div a {
+div#top-bar div a {
     font-size: large;
     font-weight: bold;
     text-decoration: none;
@@ -76,10 +76,10 @@ div.top-bar div a {
     color: inherit;
 }
 
-div.top-bar div a:visited {
+div#top-bar div a:visited {
     color: inherit;
 }
 
-div.top-bar + div {
+div#top-bar + div {
     padding-top: 64px;
 }

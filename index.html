@@ -15,11 +15,17 @@
         <script src="js/menuLoader.js"></script>
 
         <style>
-            p.description {
+            div.description p {
                 color: var(--sunglow);
             }
-            p.description span {
+            div.description p span {
                 color: var(--red-salsa);
+            }
+            div.description h1 ~ h2 {
+                padding-left: 24px;
+            }
+            div.description h1 ~ h2 + p {
+                padding-left: 24px;
             }
         </style>
 
@@ -32,15 +38,31 @@
         <div id="top-bar"></div>
         
         <div class="container">
-            <h1>Pythonian23</h1>
-            <p class="description">
-                I am a hobbyist programmer.
-                I am able to code in <span>Python</span> and <span>Java</span>, and I am able to do some basic <span>web development</span>.
-                I am also currently learning <span>GoLang</span>. I am moderately familiar with working with <span>REST API</span>s.
-                I also have some experience working with <span>discord.py</span>, a wrapper for creating <span>Discord bots</span>.
-                I have an interest in <span>cryptography</span>, and I have a basic understanding of <span>cryptography</span> and related systems.
-                I also make music with <a href="https://beepbox.co/"><span>Beepbox</span></a> and <a href="https://jummbus.bitbucket.io/"><span>Jummbox</span></a>, and my music can be found on <a href="https://soundcloud.com/pyth23/"><span>Soundcloud</span></a>.
-            </p>
+            <div class="description">:
+                <h1>About me</h1>
+
+                <p>
+                    I am a hobbyist programmer.
+                    I am able to code in <span>Python</span> and <span>Java</span>, and I am able to do some basic <span>web development</span>.
+                    I am also currently learning <span>GoLang</span>. I am moderately familiar with working with <span>REST API</span>s.
+                    I also have some experience working with <span>discord.py</span>, a wrapper for creating <span>Discord bots</span>.
+                    I have an interest in <span>cryptography</span>, and I have a basic understanding of <span>cryptography</span> and related systems.
+                    I enjoy <span>mathematics</span> and <span>physics</span>.
+                    I also make music with <a href="https://beepbox.co/"><span>Beepbox</span></a> and <a href="https://jummbus.bitbucket.io/"><span>Jummbox</span></a>, and my music can be found on <a href="https://soundcloud.com/pyth23/"><span>Soundcloud</span></a>.
+                </p>
+            </div>
+
+            <div class="description">
+                <h1>My projects</h1>
+
+                <h2>Yenigma</h2>
+                <p>
+                    The <span>Yenigma</span> is an encryption scheme that I created, based on the <span>Enigma</span>, a German encryption machine used in World War II.
+                    The <span>Yenigma</span> was made based on the <span>Enigma</span>, but fixes some of its major shortcomings.
+                    For example, the <span>Yenigma</span> incorporates the plugboard of the <span>Enigma</span> into the rotation of the rotors, making it much harder to ignore it as a simple <span>substitution cipher</span>.
+                    The one major downside compared to the original <span>Enigma</span> is that unlike the <span>Enigma</span>, the <span>Yenigma</span> requires the intent (encrypt/decrypt) to be specified.
+                </p>
+            </div>
         </div>
 
     </body>

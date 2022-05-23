@@ -1,14 +1,14 @@
 /*Color Pallete*/
 :root {
 	--bg-primary: #000f;
-	--bg-secondary: #102f;
+	--bg-secondary: #555f;
 	--fg-primary: #ffff;
 	--fg-secondary: #bbbf;
-	--he-primary: #0f0f;
+	--he-primary: #ff4f;
 	--he-secondary: #0acf;
-	--sp-red: #daaf;
-	--sp-green: #adaf;
-	--sp-blue: #aadf;
+	--sp-red: #f06f;
+	--sp-green: #0f6f;
+	--sp-blue: #47ff;
 }
 
 /*Color Definitions*/
@@ -55,6 +55,17 @@ p {
 	margin-left: 8px;
 	margin-right: 8px;
 	text-indent: 32px;
+    font-size:16px;
+    border: solid 1px var(--fg-primary);
+    padding: 12px;
+}
+
+a {
+    color: var(--sp-green);
+}
+
+a:visited {
+	color: inherit;
 }
 
 div#top-bar {
@@ -88,9 +99,7 @@ div#top-bar div a {
 	color: inherit;
 }
 
-div#top-bar div a:visited {
-	color: inherit;
-}
+
 
 div#top-bar + div {
 	padding-top: 64px;

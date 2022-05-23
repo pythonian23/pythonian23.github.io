@@ -5,10 +5,12 @@
 	--fg-primary: #ffff;
 	--fg-secondary: #bbbf;
 	--he-primary: #ff4f;
-	--he-secondary: #0acf;
+	--he-secondary: #1fdf;
 	--sp-red: #f06f;
 	--sp-green: #0f6f;
-	--sp-blue: #47ff;
+	--sp-blue: #0acf;
+    --sp-cyan: #0eff;
+    --sp-magenta: #b9ff;
 }
 
 /*Color Definitions*/
@@ -21,6 +23,8 @@
 [color=spr] {color: var(--sp-red)}
 [color=spg] {color: var(--sp-green)}
 [color=spb] {color: var(--sp-blue)}
+[color=spc] {color: var(--sp-cyan)}
+[color=spm] {color: var(--sp-magenta)}
 
 * {
 	font-family: 'InconsolataRegular';
@@ -61,7 +65,7 @@ p {
 }
 
 a {
-    color: var(--sp-green);
+    color: var(--sp-cyan);
 }
 
 a:visited {
@@ -71,8 +75,6 @@ a:visited {
 div#top-bar {
 	display: flex;
 	background-color: var(--bg-secondary);
-	border-bottom-left-radius: 16px;
-	border-bottom-right-radius: 16px;
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -99,8 +101,26 @@ div#top-bar div a {
 	color: inherit;
 }
 
-
-
 div#top-bar + div {
-	padding-top: 64px;
+	padding-top: 24px;
+}
+
+.box {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url("../assets/enigma.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box h1 {
+    top: 8px;
+    left: 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }

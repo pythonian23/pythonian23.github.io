@@ -1,3 +1,5 @@
+
+
 /*Color Pallete*/
 :root {
 	--bg-primary: #000f;
@@ -9,30 +11,63 @@
 	--sp-red: #f06f;
 	--sp-green: #0f6f;
 	--sp-blue: #0acf;
-    --sp-cyan: #0eff;
-    --sp-magenta: #b9ff;
+	--sp-cyan: #0eff;
+	--sp-magenta: #b9ff;
 }
 
 /*Color Definitions*/
-[color=bgp] {background-color: var(--bg-primary)}
-[color=bgs] {background-color: var(--bg-secondary)}
-[color=fgp] {color: var(--fg-primary)}
-[color=fgs] {color: var(--fg-secondary)}
-[color=hep] {color: var(--he-primary)}
-[color=hes] {color: var(--he-primary)}
-[color=spr] {color: var(--sp-red)}
-[color=spg] {color: var(--sp-green)}
-[color=spb] {color: var(--sp-blue)}
-[color=spc] {color: var(--sp-cyan)}
-[color=spm] {color: var(--sp-magenta)}
+[color=bgp] {
+	background-color: var(--bg-primary)
+}
+
+[color=bgs] {
+	background-color: var(--bg-secondary)
+}
+
+[color=fgp] {
+	color: var(--fg-primary)
+}
+
+[color=fgs] {
+	color: var(--fg-secondary)
+}
+
+[color=hep] {
+	color: var(--he-primary)
+}
+
+[color=hes] {
+	color: var(--he-primary)
+}
+
+[color=spr] {
+	color: var(--sp-red)
+}
+
+[color=spg] {
+	color: var(--sp-green)
+}
+
+[color=spb] {
+	color: var(--sp-blue)
+}
+
+[color=spc] {
+	color: var(--sp-cyan)
+}
+
+[color=spm] {
+	color: var(--sp-magenta)
+}
 
 * {
 	font-family: monospace;
 	font-weight: normal;
-	font-style: normal; 
+	font-style: normal;
 }
 
-html, body {
+html,
+body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -50,7 +85,11 @@ h1 {
 	font-weight: bolder;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
 	color: var(--he-secondary);
 	font-weight: bold;
 }
@@ -58,18 +97,17 @@ h2, h3, h4, h5, h6 {
 p {
 	margin-left: 8px;
 	margin-right: 8px;
-	text-indent: 32px;
-    font-size:16px;
-    border: solid 1px var(--fg-primary);
-    padding: 12px;
+	font-size: 16px;
+	border: solid 1px var(--fg-primary);
+	padding: 12px;
 }
 
 a {
-    color: var(--sp-cyan);
+	color: var(--sp-cyan);
 }
 
 a:visited {
-	color: inherit;
+	color: var(--sp-cyan);
 }
 
 div#top-bar {
@@ -84,6 +122,7 @@ div#top-bar {
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 1;
 }
 
 div#top-bar div {
@@ -102,13 +141,46 @@ div#top-bar div a {
 }
 
 .img-box {
-    width: 100%;
-    aspect-ratio: 4/3;
-    background-image: url("../assets/enigma.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    position: static;
-    top: 0px;
+	width: 100%;
+	aspect-ratio: 4/2;
+	background-image: url("../assets/enigma.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	position: static;
+}
+
+.img-box div {
+	position: relative;
+	width: 100%;
+	top:50%;
+	font-size: 12vw;
+}
+
+div.center {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	width: 64%;
+	height: min-content;
+	text-align: center;
+
+	padding: 5%;
+}
+
+div.center h1 {
+	font-size: 64px;
+	height: fit-content;
+}
+
+div.center p {
+	text-indent: 0;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
 }

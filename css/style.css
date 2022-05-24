@@ -27,7 +27,7 @@
 [color=spm] {color: var(--sp-magenta)}
 
 * {
-	font-family: 'InconsolataRegular';
+	font-family: monospace;
 	font-weight: normal;
 	font-style: normal; 
 }
@@ -101,10 +101,6 @@ div#top-bar div a {
 	color: inherit;
 }
 
-div#top-bar + div {
-	padding-top: 24px;
-}
-
 .img-box {
     width: 100%;
     aspect-ratio: 4/3;
@@ -113,4 +109,6 @@ div#top-bar + div {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    position: static;
+    top: 0px;
 }

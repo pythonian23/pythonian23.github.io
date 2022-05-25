@@ -74,6 +74,14 @@ body {
 	z-index: -256;
 }
 
+body {
+	background-image: url("../assets/enigma.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
 div.container {
 	padding-left: 24px;
 	padding-right: 24px;
@@ -139,29 +147,28 @@ div#top-bar div a {
 	color: inherit;
 }
 
-.img-box {
-	width: 100%;
-	aspect-ratio: 4/3;
-	background-image: url("../assets/enigma.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	background-attachment: center;
-	background-size: 100%;
-	position: fixed;
-	z-index: 0;
-}
-
 .window {
 	width: 100%;
-	aspect-ratio: 4/2;
-	opacity: 0;
+	aspect-ratio: 3/1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.img-box div {
+.wall {
+	width: 100%;
+	background: var(--bg-primary);
+}
+
+.window h1 {
+	color: var(--fg-primary);
 	position: relative;
 	width: 100%;
-	top:10%;
+	bottom: 0;
+	margin: 0;
+	padding-left: 2%;
 	font-size: 8vw;
+	font-weight: normal;
 }
 
 div.center {
